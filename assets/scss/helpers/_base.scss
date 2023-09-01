@@ -1,7 +1,4 @@
 input {
-  // &:is([type="email"], [type="number"], [type="tel"], [type="password"], [type="date"], [type="time"]) {
-  //   padding: 1rem 1.5rem;
-  // }
   &:valid {
     border: 2px solid $dark;
   }
