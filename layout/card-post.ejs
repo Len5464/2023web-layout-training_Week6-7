@@ -1,0 +1,41 @@
+<div
+  class="card col-sm-6 col-lg-4"
+  data-aos="fade-up"
+>
+  <div class="card-header border-bottom border-3 border-dark">
+    <h2 class="card-title mb-0 text-truncate placeholder-glow"><%= date %></h2>
+  </div>
+  <div class="card-body flow-y">
+    <img
+      class="card-img object-fit-cover"
+      src="../assets/images/event/<%= id %>.jpg"
+      alt="event<%= id %>"
+      style="height: 255px"
+    />
+    <h4 class="card-subtitle mt-0 fw-bold fs-6 fs-md-4 placeholder-glow"><%= title %></h4>
+    <p
+      class="card-text overflow-y-hidden placeholder-glow"
+      style="font-family: Noto Sans TC; height: 4.5em"
+      ><%= content %></p
+    >
+  </div>
+  <div class="card-footer d-flex justify-content-between fw-bold mt-1 border-top border-bottom border-2 border-dark">
+    <a class="link-dark d-flex gap-1 align-items-center"
+      ><img
+        width="24px"
+        height="24px"
+        src="../assets/images/sparkler.png"
+        alt="icon"
+      />社群活動
+    </a>
+    <a
+      href="event-info.html?id=<%= id %>"
+      class="icon-link icon-link-hover hover-dotted-primary link-dark text-decoration-none"
+      >開賣中
+      <i
+        class="icofont-rounded-double-right bi"
+        aria-hidden="true"
+      ></i>
+    </a>
+  </div>
+</div>

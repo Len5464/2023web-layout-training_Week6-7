@@ -1,0 +1,44 @@
+.flow {
+  &-y :where(:not(:last-child)) {
+    margin-bottom: var(--spacer, 12px);
+  }
+}
+.lh-100 {
+  line-height: 100%;
+}
+.text-spacing-3px {
+  letter-spacing: 3.2px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.lightless {
+  &-70 {
+    filter: brightness(0.3);
+  }
+  &-50 {
+    filter: brightness(0.5);
+  }
+  &-30 {
+    filter: brightness(0.7);
+  }
+}
+
+// 字體大小生成斷點
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);

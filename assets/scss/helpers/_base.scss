@@ -1,0 +1,21 @@
+input {
+  // &:is([type="email"], [type="number"], [type="tel"], [type="password"], [type="date"], [type="time"]) {
+  //   padding: 1rem 1.5rem;
+  // }
+  &:valid {
+    border: 2px solid $dark;
+  }
+  &:invalid {
+    border: 2px solid $secondary;
+  }
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  background: url("/assets/images/paper.png"), lightgray 0% 0% / 89.60000276565552px 89.60000276565552px repeat, #f3f1e5;
+}
